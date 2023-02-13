@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+    <title>Document</title>
+    <style>
+        .star{
+            color: red;
+            size: 5px;
+        }
+    </style>
+</head>
+<body>
+<div style="border: 2px solid black; background-color: lightblue; width: 100%; position: relative; align-content: center; ">
+    <label for="">Name <s class="star" >*</s></label>
+
+    <div class="row">
+        <div class="col">
+          
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+       
+      </div>
+      <label for="">Date of Birth <s class="star">*</s></label>
+      <input type="date" placeholder="Birthdate" class="form-control"  >
+
+      <label for="">Email <s class="star">*</s></label>
+      <input type="Email" placeholder="Enter your E-mail" class="form-control" required >
+     
+     <!-- Fathers Name -->
+      <label for="">Fathers Name <s class="star" >*</s></label>
+
+      <div class="row">
+          <div class="col">
+            
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+      </div>    
+         
+         <!--  Mothers Name-->
+          <label for="">Mothers Name <s class="star" >*</s></label>
+
+          <div class="row">
+              <div class="col">
+                
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+        
+         </div>
+
+         <!-- Gender -->
+         <label for="">Gender <s class="star">*</s></label>
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+             Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+             Female
+            </label>
+          </div>
+
+       <label for="">Nationality <s class="star">*</s></label>
+      <input type="text"  class="form-control"  >
+
+      <label for="">Home Address<s class="star">*</s></label>
+      <input type="Address" placeholder="Street Address" class="form-control"  >
+
+      <div class="row my-2">
+        <div class="col">
+          
+          <input type="text" class="form-control" placeholder="City" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Country" aria-label="Last name">
+        </div>
+  
+   </div>
+
+   <label for="phone">Telephone Home<s class="star">*</s></label>
+   <input type="Address" placeholder="####-###-###" class="form-control" required id="phone" >
+
+   <label for="phone">Telephone Mobile<s class="star">*</s></label>
+   <input type="Address" placeholder="####-###-###" class="form-control" id="phone" required>
+  
+             
+</div>  
+
+<button type="button" class="btn btn-primary btn-lg my-2">Next Page</button>
+
+<div style="border: 2px solid black; background-color: lightblue; width: 100%; position: relative; margin-top: 10px;" id="2ndpage">
+    <form>
+        <h2>HSC Information</h2>
+        <p>
+          <label for="hscInstitution">HSC Institution Name:</label>
+          <input type="text" id="hscInstitution" name="hscInstitution">
+        </p>
+        <p>
+          <label for="hscBoard">HSC Board (CBSE, ICSE or State board):</label>
+          <select id="hscBoard" name="hscBoard">
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+          </select>
+        </p>
+        <p>
+          <label for="hscScore">Score in HSC (Percentage):</label>
+          <input type="text" id="hscScore" name="hscScore">
+        </p>
+        <h2>SSC Information</h2>
+        <p>
+          <label for="sscInstitution">SSC Institution Name:</label>
+          <input type="text" id="sscInstitution" name="sscInstitution">
+        </p>
+        <p>
+          <label for="sscBoard">SSC Board (CBSE, ICSE or State board):</label>
+          <select id="sscBoard" name="sscBoard">
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+          </select>
+        </p>
+        <p>
+          <label for="sscScore">Score in SSC (Percentage):</label>
+          <input type="text" id="sscScore" name="sscScore">
+        </p>
+        <h2>Current Education</h2>
+        <p>
+          <label for="pursuing">Currently Pursuing:</label>
+          <input type="text" id="pursuing" name="pursuing">
+        </p>
+        <p>
+          <label for="currentInstitution">Current Educational Institution Name:</label>
+          <input type="text" id="currentInstitution" name="currentInstitution">
+        </p>
+        <p>
+          <label for="overallPercentage">Overall Percentage:</label>
+          <input type="text" id="overallPercentage" name="overallPercentage">
+        </p>
+        <p>
+          <label for="backlogs">Current Backlogs (if any):</label>
+          <select id="backlogs" name="backlogs">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
+          <input type="text" id="backlogs" name="backlogs"
+        </p>
+        <p>
+          <!-- <input type="submit" value="Submit"> -->
+        </p>
+      </form>
+
+
+           
+</div>
+
+<button type="button" class="btn btn-primary btn-lg my-2">Next Page</button>
+
+
+
+<div style="border: 2px solid black; background-color: lightblue; width: 100%; position: relative; margin-top: 10px;" id="3rd page">
+    <form>
+        <label>Recent passport size photograph:</label>
+        <input type="file" accept="image/*" maxsize="4000000" />
+        <br />
+        <label>HSC mark sheet:</label>
+        <input type="file" accept="application/pdf, image/*" maxsize="4000000" />
+        <br />
+        <label>SSC mark sheet:</label>
+        <input type="file" accept="application/pdf, image/*" maxsize="4000000" />
+        <br />
+        <label>All semesters mark sheet:</label>
+        <input type="file" accept="application/pdf" maxsize="10000000" />
+        <br />
+        <!-- <button type="button" class="btn btn-primary btn-lg my-2">SUBMIT</button> -->
+
+        <!-- <button type="submit">Submit</button> -->
+      </form>
+      
+</div>
+<button type="button" class="btn btn-primary btn-lg my-2">SUBMIT</button>
+
+
+
+  
+  <script>
+    const input = document.querySelector("#phone");
+  
+    input.addEventListener("input", function() {
+      let value = input.value;
+      value = value.replace(/\D/g, ""); 
+  
+      if (value.length > 10) {
+        value = value.substring(0, 10);
+      }
+  
+      input.value = value;
+    });
+  
+    const form = document.querySelector("form");
+  
+    form.addEventListener("submit", function(event) {
+      if (input.value.length !== 10) {
+        alert("Please enter a valid 10-digit phone number");
+        event.preventDefault();
+      }
+    });
+  </script>
+  
+
+
+</body>
+</html>
